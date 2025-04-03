@@ -6,18 +6,18 @@ namespace Shared.DTOs
     public class CardDrawnMessage
     {
         public string Action { get; set; } = "card_drawn";
-        public string PlayerId { get; set; }
-        public CardDrawnData Data { get; set; }
+        public required string PlayerId { get; set; }
+        public required CardDrawnData Data { get; set; }
     }
 
     public class CardDrawnData
     {
-        public List<CardDTO> Cards { get; set; }
+        public required List<CardDTO> Cards { get; set; }
     }
 
     public class CardDTO
     {
-        public int Value { get; set; }  // Ví dụ: 1 cho Át, 13 cho King
-        public string Suit { get; set; }  // "Spades", "Clubs", "Diamonds", "Hearts"
+        public required int Value { get; set; }  // Ví dụ: 1 cho Át, 13 cho King
+        public required string Suit { get; set; }  // "Spades", "Clubs", "Diamonds", "Hearts"
     }
 }

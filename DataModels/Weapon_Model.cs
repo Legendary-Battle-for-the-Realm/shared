@@ -1,5 +1,5 @@
 public class Weapon {
-    public int Id { get; set; }
+    public required int Id { get; set; }
     public required string Name { get; set; }
     public required string Atk { get; set; }   // Dạng phần trăm
     public required string Desc { get; set; }

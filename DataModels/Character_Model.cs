@@ -8,7 +8,7 @@ public class Skill
 
 public class Character
 {
-    public int Id { get; set; }
+    public required int Id { get; set; }
     public required string Name { get; set; }
     public required string Desc { get; set; }
     public required int Atk { get; set; }

@@ -4,7 +4,7 @@ namespace Shared.DTOs
 {
     public class DrawCardMessage
     {
-        public string Action { get; set; } = "draw_card";
-        public string PlayerId { get; set; }
+        public required string Action { get; set; } = "draw_card";
+        public required string PlayerId { get; set; }
     }
 }

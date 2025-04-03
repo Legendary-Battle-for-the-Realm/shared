@@ -5,11 +5,11 @@ namespace Shared.DTOs
     public class MatchEndMessage
     {
         public string Action { get; set; } = "match_end";
-        public MatchEndData Data { get; set; }
+        public required MatchEndData Data { get; set; }
     }
 
     public class MatchEndData
     {
-        public string WinnerPlayerId { get; set; }
+        public required string WinnerPlayerId { get; set; }
     }
 }

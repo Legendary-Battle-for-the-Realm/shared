@@ -4,7 +4,7 @@ public class EquipmentSkill {
 }
 
 public class Armor {
-    public int Id { get; set; }
+    public required int Id { get; set; }
     public required string Name { get; set; }
     public required string Atk { get; set; }   // Dạng phần trăm
     public required string Def { get; set; }   // Dạng phần trăm

@@ -6,11 +6,11 @@ namespace Shared.DTOs
     public class InitMatchMessage
     {
         public string Action { get; set; } = "init_match";
-        public InitMatchData Data { get; set; }
+        public required InitMatchData Data { get; set; }
     }
 
     public class InitMatchData
     {
-        public List<string> Players { get; set; }
+        public required List<string> Players { get; set; }
     }
 }

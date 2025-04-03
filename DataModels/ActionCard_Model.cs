@@ -4,7 +4,7 @@ public enum CardType {
 }
 
 public class ActionCard {
-    public int Id { get; set; }
+    public required int Id { get; set; }
     public required string Name { get; set; }
     public required string Desc { get; set; }
     public required string Ref { get; set; }
