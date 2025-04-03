@@ -1,17 +1,22 @@
 using System.Collections.Generic;
-
-public class Skill
-{
-    public required string Name { get; set; }
-    public required string Ref { get; set; }
-}
+using System.ComponentModel.DataAnnotations;
 
 public class Character
 {
-    public required int Id { get; set; }
+    [Key]
+    public required int Id { get; set; } 
+
     public required string Name { get; set; }
     public required string Desc { get; set; }
     public required int Atk { get; set; }
     public required string Faction { get; set; }
-    public required List<Skill> Skill { get; set; }
+
+
+    public required string Cultivation { get; set; } 
+    public required int HP { get; set; } = 100; 
+    public required int Qi { get; set; } = 0; 
+
+    public required List<Skill> Skills { get; set; } = new List<Skill>();
+
+    public required int UserId { get; set; }
 }
