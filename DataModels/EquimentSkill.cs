@@ -1,10 +1,12 @@
 using System.ComponentModel.DataAnnotations;
 
-public class EquipmentSkill
+namespace Shared.Models
 {
-    [Key] 
-    public required int Id { get; set; } 
-
-    public required string Name { get; set; }
-    public required string Ref { get; set; }
+    public class EquipmentSkill
+    {
+        [Key]
+        public required int Id { get; set; }
+        public required string Name { get; set; }
+        public required string Ref { get; set; }
+    }
 }

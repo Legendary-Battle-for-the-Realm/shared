@@ -1,10 +1,12 @@
 using System.ComponentModel.DataAnnotations;
 
-public class Cultivation
+namespace Shared.Models
 {
-    [Key]
-    public required int Id { get; set; }
-
-    public required string Name { get; set; }
-    public required int RequiredQi { get; set; }
+    public class Cultivation
+    {
+        [Key]
+        public required int Id { get; set; }
+        public required string Name { get; set; }
+        public required int RequiredQi { get; set; }
+    }
 }

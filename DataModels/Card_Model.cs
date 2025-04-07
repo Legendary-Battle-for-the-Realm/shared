@@ -1,24 +1,18 @@
 using System.ComponentModel.DataAnnotations;
+using Shared.Enums;
 
-public enum CardType
+namespace Shared.Models
 {
-    Action,
-    Consumable
-}
-
-public class Card
-{
-    [Key]
-    public required int Id { get; set; } // Khóa chính
-
-    public required string Name { get; set; }
-    public required string Desc { get; set; }
-    public required string Ref { get; set; }
-
-    public required CardType Type { get; set; } 
-
-    public int? EffectId { get; set; } 
-    public Effect? Effect { get; set; } 
-
-    public int? Quantity { get; set; } 
+    public class Card
+    {
+        [Key]
+        public required int Id { get; set; }
+        public required string Name { get; set; }
+        public required string Desc { get; set; }
+        public required string Ref { get; set; }
+        public required CardType Type { get; set; }
+        public int? EffectId { get; set; }
+        public Effect? Effect { get; set; }
+        public int? Quantity { get; set; }
+    }
 }
