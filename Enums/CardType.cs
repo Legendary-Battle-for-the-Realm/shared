@@ -2,7 +2,7 @@ namespace Shared.Enums
 {
     public enum CardType
     {
-        Action,
-        Consumable
+        Action = 1,
+        Consumable = 2
     }
 }
