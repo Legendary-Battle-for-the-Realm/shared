@@ -1,9 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Shared.Models
 {
     public class Room
     {
         public int Id { get; set; }
-        public string Name { get; set; } 
+        public required string Name { get; set; } 
         public int MaxPlayers { get; set; } 
         public List<Player> Players { get; set; } = new List<Player>(); 
         public bool IsGameStarted { get; set; } 
