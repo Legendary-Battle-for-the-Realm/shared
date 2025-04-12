@@ -1,9 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Shared.Models
 {
     public class Player
     {
         public int Id { get; set; } 
-        public string Name { get; set; } 
+        public required string Name { get; set; } 
         public int RoomId { get; set; } 
         public List<Card> Hand { get; set; } = new List<Card>(); 
         public List<Character> Characters { get; set; } = new List<Character>();
