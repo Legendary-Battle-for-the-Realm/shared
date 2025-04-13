@@ -11,6 +11,7 @@ namespace Shared.Models
         public bool IsGameStarted { get; set; } 
         public int CurrentTurnPlayerId { get; set; } 
         public List<Card> Deck { get; set; } = new List<Card>(); 
+        public List<Card> DiscardPile { get; set; } = new List<Card>();
         public List<int> TurnOrder { get; set; } = new List<int>(); 
     }
 }
