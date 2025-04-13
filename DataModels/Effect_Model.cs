@@ -1,7 +1,9 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Shared.Models
 {
+    [Serializable]
     public class Effect
     {
         [Key]
