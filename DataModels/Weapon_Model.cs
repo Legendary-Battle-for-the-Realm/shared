@@ -12,7 +12,7 @@ namespace Shared.Models
         public required string Name { get; set; }
         public required string Atk { get; set; }
         public required string Desc { get; set; }
-        public required int UserId { get; set; }
+        public int? UserId { get; set; }
         public required string CultivationRequired { get; set; }
 
         public int SkillId { get; set; }
