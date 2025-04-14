@@ -16,8 +16,8 @@ namespace Shared.Models
         public int? UserId { get; set; }
         public required string CultivationRequired { get; set; }
 
-        public int SkillId { get; set; }
+        public int? SkillId { get; set; }
         [JsonIgnore] 
-        public required EquipmentSkill Skill { get; set; }
+        public EquipmentSkill? Skill { get; set; }
     }
 }
