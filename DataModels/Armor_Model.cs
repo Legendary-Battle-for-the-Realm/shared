@@ -19,5 +19,6 @@ namespace Shared.Models
         public int? SkillId { get; set; }
         [JsonIgnore] 
         public EquipmentSkill? Skill { get; set; }
+        public string ImageUrl { get; set; }
     }
 }
